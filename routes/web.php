@@ -18,6 +18,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('settings/password', [Settings\PasswordController::class, 'edit'])->name('settings.password.edit');
     Route::put('settings/password', [Settings\PasswordController::class, 'update'])->name('settings.password.update');
     Route::get('settings/appearance', [Settings\AppearanceController::class, 'edit'])->name('settings.appearance.edit');
+    Route::put('settings/appearance', [Settings\AppearanceController::class, 'update'])->name('settings.appearance.update');
 });
 
 require __DIR__.'/auth.php';
