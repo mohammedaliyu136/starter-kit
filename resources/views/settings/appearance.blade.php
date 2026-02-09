@@ -34,14 +34,6 @@
                 <div
                     class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden mb-6">
                     <div class="p-6">
-                        @if (session('status') === 'appearance-updated')
-                            <div x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
-                                class="mb-4 p-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
-                                role="alert">
-                                {{ __('Appearance updated successfully.') }}
-                            </div>
-                        @endif
-
                         <!-- Theme Form -->
                         <form id="appearance-form" action="{{ route('settings.appearance.update') }}" method="POST">
                             @csrf

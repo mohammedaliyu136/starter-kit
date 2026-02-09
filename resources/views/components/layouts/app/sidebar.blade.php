@@ -29,10 +29,6 @@
                                     </x-layouts.sidebar-three-level-link>
                                 </x-layouts.sidebar-three-level-parent>
                             </x-layouts.sidebar-two-level-link-parent>
-                            <!-- Settings -->
-                            <li x-show="sidebarOpen" class="border-t border-gray-200 dark:border-gray-700 my-2 mx-4"></li>
-                            <x-layouts.sidebar-link href="{{ route('settings.profile.edit') }}" icon='fas-gear'
-                                :active="request()->routeIs('settings.*')">Settings</x-layouts.sidebar-link>
                         </ul>
                     </nav>
                 </div>

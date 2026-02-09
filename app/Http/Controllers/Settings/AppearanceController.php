@@ -23,6 +23,6 @@ class AppearanceController extends Controller
 
         $request->user()->update($validated);
 
-        return back()->with('status', 'appearance-updated');
+        return back();
     }
 }
